@@ -121,20 +121,10 @@ function gdc() {
 #
 # I put
 # `~/i` for my projects
-# `~/f` for forks
-# `~/r` for reproductions
 # -------------------------------- #
 
 function i() {
   cd ~/i/$1
-}
-
-function repros() {
-  cd ~/r/$1
-}
-
-function forks() {
-  cd ~/f/$1
 }
 
 function pr() {
@@ -162,22 +152,6 @@ function clonei() {
   i && clone "$@" && code . && cd ~2
 }
 
-function cloner() {
-  repros && clone "$@" && code . && cd ~2
-}
-
-function clonef() {
-  forks && clone "$@" && code . && cd ~2
-}
-
 function codei() {
   i && code "$@" && cd -
-}
-
-function serve() {
-  if [[ -z $1 ]] then
-    live-server dist
-  else
-    live-server $1
-  fi
 }
