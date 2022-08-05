@@ -121,10 +121,15 @@ function gdc() {
 #
 # I put
 # `~/i` for my projects
+# `~/Workspace` for Workspace
 # -------------------------------- #
 
 function i() {
   cd ~/i/$1
+}
+
+function work() {
+  cd ~/Workspace/$1
 }
 
 function pr() {
