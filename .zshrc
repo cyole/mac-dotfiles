@@ -8,12 +8,15 @@ export GOROOT=/usr/local/go
 export GOBIN=$GOPATH/bin 
 export PATH=$PATH:$GOBIN
 export GO111MODULE=on
-export GOPROXY=https://mirrors.aliyun.com/goproxy/
+export GOPROXY=https://goproxy.cn
 
 # flutter
 export PUB_HOSTED_URL=https://pub.flutter-io.cn
 export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 export PATH=/Users/li/flutter/bin:$PATH
+
+# ruby
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 
 # Homebrew
 export PATH="/opt/homebrew/bin:$PATH"
